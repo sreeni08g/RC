@@ -1,0 +1,17 @@
+.header {
+    background-color: #00afbc;
+    height:70px;
+    line-height: 40px;
+}
+.logo 
+    {
+    height: 14px;
+}
+img 
+    {
+        width: 8rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        height: 3rem;
+    }
+

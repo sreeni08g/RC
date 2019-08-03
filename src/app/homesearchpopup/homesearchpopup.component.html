@@ -1,0 +1,31 @@
+<div class='container_form'>
+    <div class="form">
+      <mat-dialog-content>
+          
+        <form >
+          Enter Keyword:<br>
+          <input type="text" name="keyword" >
+          <p> Choose the websites to Scrap</p>
+        
+          <div class="checkbox">
+            <input type="checkbox" > https://www.theatlantic.com/<br>
+            <input type="checkbox" > https://phys.org/<br>
+            <input type="checkbox" > https://www.filmsforaction.org/ <br>
+            <input type="checkbox" > https://aeon.co<br>
+            <input type="checkbox" > https://slate.com<br>
+            <input type="checkbox" > https://www.nationalgeographic.com/<br>
+            <input type="checkbox" > https://www.smithsonianmag.com/ <br>
+            <input type="checkbox" > https://phys.org/<br>
+          </div>  
+          
+        </form> 
+        
+      </mat-dialog-content>
+      <mat-dialog-actions align="center">
+        
+        <button  class="runbutton" mat-raised-button color="primary" (click)="onConfirmClick()" tabindex="1"> {{confirmButtonText}}</button> 
+        <button class="cancelbutton" mat-raised-button mat-dialog-close tabindex="-1">{{cancelButtonText}}</button>
+      </mat-dialog-actions>
+    
+    </div>
+</div>
