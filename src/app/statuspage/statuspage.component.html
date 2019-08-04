@@ -1,0 +1,51 @@
+<div class="container">
+    <div style="text-align:center">
+      
+        <h2>
+           {{ title }}
+        </h2>
+          
+    </div>
+
+    <div class="source-key">
+
+        <span class="source">Source: {{source}} </span>
+        
+        <span class="key">Keyword: {{key}} </span>
+    </div>
+    <div class="table_review" style="text-align: -webkit-center ">
+        <table style="width:30%"> 
+        
+          <tr>
+            
+            <th>Sno</th>
+            <th>Exams Applicable</th>
+            
+          </tr>
+          
+          <tr>
+            <th class="passage"> <a  mat-button (click)="openDialog()">Passage 1</a></th>
+            
+            <th>GRE</th>
+            
+          </tr>
+          
+          <tr>
+           <th class="passage" > <a  mat-button (click)="openDialog()">Passage 2</a></th>
+            
+           
+            <th>SAT</th>
+            
+          </tr>
+    
+          <tr>
+            <th class="passage" >Passage 3</th>
+            
+            <th>GRE,SAT,TOEFL</th>
+            
+          </tr>
+      
+      
+        </table>
+        
+</div>

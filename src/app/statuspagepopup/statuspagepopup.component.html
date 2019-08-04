@@ -1,0 +1,43 @@
+<div class='container_form'>
+    <mat-dialog-content>
+        <form >
+         <div class="formheader">
+           <span>Keyword:Doppler Effect</span>
+        
+          <a href="https://www.theatlantic.com/magazine/archive/2018/10/up-all-night/568291/" >Click here to go the passage Link</a>
+        </div>
+        
+        <p>Several years ago, Kaitlyn Gaynor and her colleagues noticed an intriguing pattern. It started with data from Tanzania, 
+          where motion-detecting cameras captured a trend: Antelope that had once roamed primarily in the day were now roving more at night.
+          As Gaynor, a doctoral candidate at UC Berkeley, and her fellow researchers discussed the change, they realized that a similar nocturnal 
+          shift had occurred in many other mammals, too. In Mozambique, elephants had begun traveling on roads in the dark, when they were 
+          relatively free of humans, and staying in the forest by day; in Nepal, tigers were moving about more often by moonlight, 
+          while people slept; in Poland, boars living in a national park split their days evenly between waking and sleeping, 
+          while urban-dwelling boars were awake almost exclusively at night. Once the nocturnal phenomenon “was on our radar,
+          ” Gaynor told me recently, “we started seeing it, really, everywhere.” Everywhere is no exaggeration: In a paper published in June, 
+          Gaynor and her co-authors offered evidence of nocturnal shifts in dozens of species that come into regular contact with humans, 
+          on every continent but Antarctica. Gaynor suspects that these behavioral changes are bringing with them rapid evolutionary change as well.
+  
+        </p>
+        <p> Choose the Exams Applicable</p>
+  
+        <input type="checkbox" > GRE
+        <input type="checkbox" > TOEFL
+        <input type="checkbox" > SAT
+        <input type="checkbox" > Engish Fundas
+        <input type="checkbox" > Vocab
+        
+      </form>     
+    </mat-dialog-content>
+    <div class="buttons" style="text-align:center">
+
+        <mat-dialog-actions >
+        
+        <button  mat-raised-button color="primary" (click)="onConfirmClick()" tabindex="1"> {{SaveButtonText}}</button> 
+        <button mat-raised-button mat-dialog-close (click)="onConfirmClick()" tabindex="-1">{{CancelButtonText}}</button>
+        <button mat-raised-button mat-dialog-close (click)="onConfirmClick()" tabindex="-1">{{RejectButtonText}}</button>
+        
+        </mat-dialog-actions>
+    </div>
+
+  </div>

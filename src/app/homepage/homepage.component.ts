@@ -9,20 +9,13 @@ import { HomesearchpopupComponent } from '../homesearchpopup/homesearchpopup.com
 })
 export class HomepageComponent  {
 
-  constructor(private dialog: MatDialog) {
+  constructor(public dialog: MatDialog) {
   }
   openDialog( ) {
     this.dialog.open(HomesearchpopupComponent, {
-      height: '40%',
+      height: '70%',
       width: '60%',
     });
-    /*const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-    dialogConfig.width = '80%';
-    dialogConfig.height = '50%' ;
-    this.dialog.open(HomesearchpopupComponent, dialogConfig);*/
-
   }
 
 

@@ -11,9 +11,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HomesearchpopupComponent } from './homesearchpopup/homesearchpopup.component';
+import { ProgressComponent } from './progress/progress.component';
+import { StatuspageComponent } from './statuspage/statuspage.component';
+import { StatuspagepopupComponent } from './statuspagepopup/statuspagepopup.component';
 
 const routes: Routes = [
   {path: '', component: HomepageComponent},
+  {path: 'progress', component: ProgressComponent},
+  {path: 'status', component: StatuspageComponent},
+  {path: 'statuspopup', component: StatuspagepopupComponent}
 
 ];
 
@@ -23,24 +29,26 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     HomepageComponent,
-    HomesearchpopupComponent
+    HomesearchpopupComponent,
+    ProgressComponent,
+    StatuspageComponent,
+    StatuspagepopupComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
-    //MaterialModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule, 
     RouterModule,
     MatDialogModule,
-    //RouterModule.forRoot(routes),
-    //RouterModule.forChild(routes),
+    RouterModule.forRoot(routes),
+    RouterModule.forChild(routes),
   ],
   providers: [ {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
   ],
   bootstrap: [AppComponent],
   exports: [   MatDialogModule, RouterModule],
-  entryComponents: [HomesearchpopupComponent ],
+  entryComponents: [HomesearchpopupComponent, StatuspagepopupComponent ],
 })
 export class AppModule { }
