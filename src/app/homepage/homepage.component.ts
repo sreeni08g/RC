@@ -13,10 +13,7 @@ export class HomepageComponent  {
   }
   openDialog( ) {
     this.dialog.open(HomesearchpopupComponent, {
-      height: '70%',
-      width: '60%',
+      width: '400px',
     });
   }
-
-
 }

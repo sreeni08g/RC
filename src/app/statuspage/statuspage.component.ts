@@ -14,8 +14,7 @@ export class StatuspageComponent implements OnInit {
   constructor(public dialogRef: MatDialog) { }
   openDialog() {
     this.dialogRef.open(StatuspagepopupComponent, {
-      width : '40%',
-      height : '70%',
+      width: '90%',
     });
   }
   ngOnInit() {
