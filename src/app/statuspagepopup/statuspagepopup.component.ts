@@ -11,7 +11,6 @@ export class StatuspagepopupComponent  {
   constructor(public DialogRef: MatDialogRef<StatuspagepopupComponent>) { }
   SaveButtonText = 'Save';
   CancelButtonText = 'Cancel';
-  RejectButtonText= 'Reject';
   onConfirmClick(): void {
     this.DialogRef.close(true);
   }
