@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
 })
 export class HomesearchpopupComponent {
 
-  confirmButtonText = 'Run';
+  confirmButtonText = 'Get the No of Links';
   cancelButtonText = 'Cancel';
   constructor(
   public dialogRef: MatDialogRef<HomesearchpopupComponent>, private router: Router) {}
